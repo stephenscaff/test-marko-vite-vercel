@@ -17,8 +17,8 @@ A reduced Marko + Vite build to figure out Vercel deployments with this setup.
 
 - 🧪 **Dev**: `npm run dev`
 - 🏗️ **Build**: `npm run build` (Compiles to `dist` and builds a production-ready node server)
-  -- **Build Client**: `npm run build:client` (Builds client side only)
-  -- **Build Server**: `npm run build:server` (Builds server side only)
+ - **Build Client**: `npm run build:client` (Builds client side only)
+ - **Build Server**: `npm run build:server` (Builds server side only)
 - 🏁 **Serve**: `npm run start` (Run the production server)
 
 <br/>
