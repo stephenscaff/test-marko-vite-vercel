@@ -1,0 +1,13 @@
+<section.mast>
+  <div.grid>
+    <h1.mast__title>${input.title}</h1>
+    <img.mast__img src="/images/ghosty.gif"/>
+    
+    <if(input.text)>
+      <p.mast__text>${input.text}</p>
+    </if>
+    <if(input.link)>
+      <a.mast__link href=input.link.url>${input.link.label}</a>
+    </if>
+  </div>
+</section>

@@ -1,0 +1,29 @@
+# OS
+*.swp
+.DS_Store
+# Editor Configs
+.idea
+.vscode
+*.sublime*
+
+# Generated Files
+dist
+*.log
+.cache
+coverage
+.nyc-output
+*.marko.js
+.marko-cli
+.marko-devtools
+yarn-error.log
+
+
+# NPM
+node_modules
+npm-debug.log
+
+# dotenvs
+/*.env
+
+# Vercel
+.vercel

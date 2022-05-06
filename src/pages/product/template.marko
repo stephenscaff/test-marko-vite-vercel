@@ -1,0 +1,18 @@
+<app-layout>
+  <@head>
+    <title>Product: ${input.id}</title>
+  </@head>
+  <@pageHeader>
+    <app-header/>
+  </@pageHeader>
+  <@pageContent>
+    <mast 
+      title=`This is a dynamic route for the product id: ${input.id}`
+      text="Go back to the start"
+      link={
+        label: "Go Home",
+        url: "/"
+      }
+    />
+  </@pageContent>
+</app-layout>

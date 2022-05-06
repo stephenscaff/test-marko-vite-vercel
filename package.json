@@ -1,0 +1,25 @@
+{
+  "name": "test-marko-vite-vercel",
+  "description": "Vite + Marko + Vercel",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "rimraf dist && npm run build:server && npm run build:client",
+    "build:client": "cross-env NODE_ENV=production vite build",
+    "build:server": "cross-env NODE_ENV=production vite build --ssr src/index.js",
+    "dev": "node index.js",
+    "dev:inspect": "node --inspect --enable-source-maps index.js",
+    "start": "npm run build && cross-env NODE_ENV=production node index.js"
+  },
+  "dependencies": {
+    "@marko/express": "^1.0.0",
+    "@marko/vite": "^2.2.15",
+    "compression": "^1.7.4",
+    "cross-env": "^7.0.3",
+    "express": "^4.18.0",
+    "less": "^4.1.2",
+    "marko": "^5.20.9",
+    "rimraf": "^3.0.2",
+    "vite": "^2.9.6"
+  }
+}
