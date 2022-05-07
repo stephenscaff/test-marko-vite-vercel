@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "rimraf dist && npm run build:server && npm run build:client",
+    "build": "rimraf .vercel/output && npm run build:server && npm run build:client && node build.mjs",
     "build:client": "cross-env NODE_ENV=production vite build",
     "build:server": "cross-env NODE_ENV=production vite build --ssr src/index.js",
     "dev": "node index.js",
@@ -21,5 +21,8 @@
     "marko": "^5.20.9",
     "rimraf": "^3.0.2",
     "vite": "^2.9.6"
+  },
+  "devDependencies": {
+    "@vercel/nft": "^0.18.2"
   }
 }
