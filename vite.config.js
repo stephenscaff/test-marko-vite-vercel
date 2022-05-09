@@ -5,7 +5,7 @@ import path from "path";
 export default defineConfig({
   plugins: [marko()],
   build: {
-    outDir: "dist", // Server and client builds should output assets to the same folder.
+    outDir: ".vercel/output/static", // Server and client builds should output assets to the same folder.
     emptyOutDir: false // Avoid server / client deleting files from each other.
   },
   resolve: {
